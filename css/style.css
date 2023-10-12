@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 
 
 body {
@@ -7,6 +10,3 @@ body {
   color: #333;
   background-color: #fff;
 }
-
-
-
