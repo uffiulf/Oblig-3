@@ -8,26 +8,40 @@ body {
   padding: 0;
 }
 
-#ikoner{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.ikoner-top {
+/*flex for alle statiske elementer på nettsiden */
+#ikoner {
   display: flex;
   justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+/* skjønner ikke helt hva som skjer men prøver på å skille ikonene slik at de ser ut som nettsiden på figma.  
+Tankegangen var å lage to grid elementer for topp og bunn ikoner*/
+#topp-ikoner {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 3%;
   margin: 0;
-  padding: 0;
+  justify-content: space-between;
+}
+#logo{
+  height: 4rem;
 }
 
-#forside {
-  grid-column: 1/2;
-  grid-row: 1/2;
+#bunn-ikoner {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 3%;
+  margin: 0;
+  justify-content: space-between;
 }
 
-#profil {
-  grid-column: 2/3;
-  grid-row: 2/3;
+/*Creds til chatgpt for å legge inn bakgrunnsbilde*/
+body{
+  background-image: url("../img/luke-chesser-IGtutkXikuc-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 nav ul {
