@@ -12,12 +12,20 @@
 </head>
 <body>
     <nav>
-        <input type="text" id="searchbar" placeholder="Søk..">
-        <ul>
-            <li><a href="index.html" class="navi-line"  id="Forside"><i class="fa-solid fa-house"></i>Forside</a></li>
-            <li><a href="min-profil.html" id="profil"><i class="fa-solid fa-user"></i>Profil</a></li>
-            <li><a href="meny.html" id="hamburger"><i class="fa-solid fa-bars"></i>hamburger-meny</a></li>
-            <li><a href="handlekurv.html"><i class="fa-solid fa-cart-shopping"></i>Handlekurv</a></li>
+        <section id="ikoner">
+            <ul id="topp-ikoner">
+                <li><a href="index.html"  class="forside"><i class="fa-solid fa-house"></i>Forside</a></li>
+                <img src="logo.png" alt="#">
+                <li><a href="min-profil.html" class="profil"><i class="fa-solid fa-user"></i>Profil</a></li>   
+            </ul>
+            <ul id="bunn-ikoner">
+                <li><a href="meny.html" class="hamburger"><i class="fa-solid fa-bars"></i>hamburger-meny</a></li>
+                <input type="text" id="searchbar" placeholder="Søk..">
+                <li><a href="handlekurv.html" class="handlekurv"><i class="fa-solid fa-cart-shopping"></i>Handlekurv</a></li>
+            </ul>
+        </section>
+     
+        <ul id="katelog">
             <li><a href="sortering.html">Gutter-katelog</a></li>
             <li><a href="sortering.html">Jenter-katelog</a></li>
             <li><a href="sortering.html">Bilde-sko</a></li>
