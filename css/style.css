@@ -23,9 +23,26 @@ body {
   justify-content: space-between;
 }
 
+.forside i{
+  font-size: 2rem;
+}
+
 #logo {
   height: 4rem;
 }
+
+.profil{
+  font-size: 2rem;
+}
+
+.hamburger{
+  font-size: 2rem;
+}
+
+.handlekurv{
+  font-size: 2rem;
+}
+
 
 #nyheter {
   display: flex;
@@ -34,7 +51,7 @@ body {
 
 #nyheter-bilde {
   width: auto;
-  height: 20rem;
+  height: 10rem;
 }
 
 #bunn-ikoner {
@@ -72,10 +89,25 @@ nav ul {
     justify-content: space-between;
   }
 
+  .forside i{
+    font-size: 3rem;
+  }
+
   #logo {
     height: 10rem;
   }
 
+.profil i{
+  font-size: 3rem;
+}
+
+.hamburger i{
+  font-size: 3rem;
+}
+
+.handlekurv{
+  font-size: 3rem;
+}
   #nyheter {
     display: flex;
     justify-content: center;
@@ -91,4 +123,3 @@ nav ul {
     flex-wrap: nowrap;
     justify-content: space-between;
   }
-}
