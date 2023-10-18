@@ -24,6 +24,15 @@ body {
 #logo{
   height: 4rem;
 }
+#nyheter{
+  display: flex;
+  justify-content: center;
+}
+
+#nyheter-bilde{
+  width: auto;
+  height: 20rem;
+}
 
 #bunn-ikoner {
   display:flex;
