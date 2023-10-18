@@ -22,7 +22,8 @@ body {
   flex-wrap: nowrap;
   justify-content: space-between;
 }
-
+/*-------------------*/
+/*Mobil strørrelse*/
 .forside i{
   font-size: 2rem;
 }
@@ -54,6 +55,12 @@ body {
   height: 10rem;
 }
 
+
+#salg{
+  display: flex;
+  justify-content: center;
+}
+/* -----------------*/
 #bunn-ikoner {
   display: flex;
   flex-wrap: nowrap;
@@ -68,13 +75,25 @@ body {
   background-position: center;
 }
 
+/*fjerne bort punkter fra logo*/
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
+#katelog{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: 0;
 
+}
+
+/*Desktop størrelse*/
 @media screen and (min-width : 768px) {
   #ikoner {
     display: grid;
@@ -123,3 +142,25 @@ nav ul {
     flex-wrap: nowrap;
     justify-content: space-between;
   }
+
+  #katelog{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0;
+    
+  }
+
+  #bilde-sko{
+    padding-bottom: 10%;
+    margin: 10%;
+  }
+
+  /*salg forsvinner i desktop*/
+#salg{
+  display: none
+}
+}
