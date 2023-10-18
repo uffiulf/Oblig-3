@@ -10,38 +10,41 @@ body {
 
 /*grid for alle statiske elementer på nettsiden */
 #ikoner {
- display: grid;
- grid-template-columns: auto;
- padding: 3%;
- margin: 0;
+  display: grid;
+  grid-template-columns: auto;
+  padding: 3%;
+  margin: 0;
 }
+
 /* flexer ikonene og logo*/
 #topp-ikoner {
-  display:flex;
+  display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
 }
-#logo{
+
+#logo {
   height: 4rem;
 }
-#nyheter{
+
+#nyheter {
   display: flex;
   justify-content: center;
 }
 
-#nyheter-bilde{
+#nyheter-bilde {
   width: auto;
   height: 20rem;
 }
 
 #bunn-ikoner {
-  display:flex;
+  display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
 }
 
 /*Creds til chatgpt for å legge inn bakgrunnsbilde*/
-body{
+body {
   background-image: url("../img/luke-chesser-IGtutkXikuc-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -52,4 +55,40 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+
+@media screen and (min-width : 768px) {
+  #ikoner {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 3%;
+    margin: 0;
+  }
+
+  #topp-ikoner {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  #logo {
+    height: 10rem;
+  }
+
+  #nyheter {
+    display: flex;
+    justify-content: center;
+  }
+
+  #nyheter-bilde {
+    width: auto;
+    height: 20rem;
+  }
+
+  #bunn-ikoner {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
 }
