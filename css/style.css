@@ -8,20 +8,17 @@ body {
   padding: 0;
 }
 
-/*flex for alle statiske elementer på nettsiden */
+/*grid for alle statiske elementer på nettsiden */
 #ikoner {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  flex-direction: column;
+ display: grid;
+ grid-template-columns: auto;
+ padding: 3%;
+ margin: 0;
 }
-/* skjønner ikke helt hva som skjer men prøver på å skille ikonene slik at de ser ut som nettsiden på figma.  
-Tankegangen var å lage to grid elementer for topp og bunn ikoner*/
+/* flexer ikonene og logo*/
 #topp-ikoner {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding: 3%;
-  margin: 0;
+  display:flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
 }
 #logo{
@@ -29,10 +26,8 @@ Tankegangen var å lage to grid elementer for topp og bunn ikoner*/
 }
 
 #bunn-ikoner {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding: 3%;
-  margin: 0;
+  display:flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
 }
 
