@@ -101,7 +101,7 @@ nav ul {
 
 }
 
-/*Desktop størrelse*/
+/*Index - Desktop størrelse*/
 @media screen and (min-width : 768px) {
   #ikoner {
     display: grid;
@@ -176,7 +176,21 @@ nav ul {
 
 
 /*-------------------*/
-/*produktside*/
+/*produktside - mobil*/
+
+#produkt-bilde{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding-top: 1%;
+  padding-bottom: 5%;
+  margin: 0;
+}
+
+#produkt-bilde img{
+  border-radius: 3%;
+  height: 326px;
+}
 
 .price-and-buy{
   display: flex;
@@ -184,6 +198,7 @@ nav ul {
   justify-content: space-between;
   padding-left: 20%;
   padding-right: 10%;
+  
 
 
 }
@@ -239,9 +254,30 @@ nav ul {
   
 }
 
-.produkt-skrift{
+.produkt-info{
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   text-align: center;
+}
+
+
+/*produkt - Desktop størrelse*/
+@media screen and (min-width : 768px) {
+  main{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+
+  }
+  #produkt-bilde img{
+   
+  }
+  #produkt-bilde{
+    grid-column: 3
+  }
+
+#kundevurderinger{
+  grid-column: ;
+}
 }
