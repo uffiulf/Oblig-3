@@ -172,3 +172,76 @@ nav ul {
   display: none
 }
 }
+
+
+
+/*-------------------*/
+/*produktside*/
+
+.price-and-buy{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding-left: 20%;
+  padding-right: 10%;
+
+
+}
+
+#btn{
+  width: 30%;
+  max-width: 120px
+}
+
+/*https://uiverse.io/aboalsim114/neat-cow-49*/
+#btn {
+  position: relative;
+  background-color: rgb(34, 70, 230);
+  border-radius: 5px;
+  box-shadow: rgb(121, 18, 55) 0px 4px 0px 0px;
+  padding: 15px;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  width: 154px;
+  height: 49px;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  transition: all .3s ease-in-out;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#btn::before {
+  content: "";
+  background-color: rgb(68, 192, 51);
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: width 700ms ease-in-out;
+  display: inline-block;
+}
+
+#btn:hover::before {
+  width: 100%;
+}
+
+
+
+#produktnavn{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  
+}
+
+.produkt-skrift{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  text-align: center;
+}
