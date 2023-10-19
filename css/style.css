@@ -22,6 +22,14 @@ body {
   flex-wrap: nowrap;
   justify-content: space-between;
 }
+
+
+#sort-strek{
+  height: 1px;
+  border: none;
+  background-color: black;
+  margin: 10px 0 10px 0;
+}
 /*-------------------*/
 /*Mobil strørrelse*/
 .forside i{
@@ -82,7 +90,7 @@ nav ul {
   padding: 0;
 }
 
-#katelog{
+.katelog{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -143,7 +151,7 @@ nav ul {
     justify-content: space-between;
   }
 
-  #katelog{
+  .katelog{
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-evenly;

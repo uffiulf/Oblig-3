@@ -11,40 +11,54 @@
     <script src="https://kit.fontawesome.com/f943edb462.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav>
-        <!-- Grupperte ikoner, logo og søkefelt-->   
-        <section id="ikoner">
-            <ul id="topp-ikoner">
-                <li><a href="index.html"  class="forside"><i class="fa-solid fa-house"></i></a></li>
-                <!-- la inn en klikkbar logo-->
-                <a href="index.html"><img src="img/logo.png" id="logo" alt="#"></a>
-                <li><a href="min-profil.html" class="profil"><i class="fa-solid fa-user"></i></a></li>   
+    <header>
+        <nav>
+            <!-- Grupperte ikoner, logo og søkefelt-->   
+            <section id="ikoner">
+                <ul id="topp-ikoner">
+                    <li><a href="index.html"  class="forside"><i class="fa-solid fa-house"></i></a></li>
+                    <!-- la inn en klikkbar logo-->
+                    <li><a href="index.html"><img src="img/logo.png" id="logo" alt="#"></a></li>
+                    <li><a href="min-profil.html" class="profil"><i class="fa-solid fa-user"></i></a></li>   
+                </ul>
+                <ul id="bunn-ikoner">
+                    <li><a href="meny.html" class="hamburger"><i class="fa-solid fa-bars"></i></a></li>
+                    <li><input type="text" id="searchbar" placeholder="Søk.."></li>
+                    <li><a href="handlekurv.html" class="handlekurv"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </section>
+            <!-- Ze black line-->
+            <hr id="sort-strek">
+            </nav>
+    </header>
+    <main>
+            <!-- nyheter-->
+            <a href="sortering.html"> 
+                <picture id="nyheter">
+                    <img src="img/nyheter.png" id="nyheter-bilde" alt="#">
+                </picture>
+            </a>
+            
+           
+            <!-- Kategorier-->
+            <ul class="katelog">
+                <li><a href="sortering.html">Gutter-katelog</a></li>
+                <li><a href="sortering.html">Jenter-katelog</a></li>
             </ul>
-            <ul id="bunn-ikoner">
-                <li><a href="meny.html" class="hamburger"><i class="fa-solid fa-bars"></i></a></li>
-                <input type="text" id="searchbar" placeholder="Søk..">
-                <li><a href="handlekurv.html" class="handlekurv"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <ul class="katelog" id="bilde-sko">
+                <li><a href="sortering.html">Bilde-sko</a></li>
+                <li><a href="sortering.html">Bilde-sko</a></li>
             </ul>
-        </section>
-        <!-- Ze black line-->
-        <hr color="black">
-        <!-- nyheter-->
-        <picture id="nyheter"> 
-            <a href="sortering.html" ><img src="img/nyheter.png" id="nyheter-bilde" alt="#"></a>
-        </picture>
+            <ul id="salg">
+                <li><a href="sortering.html">Salg</a></li>
+            </ul>
         
-        <!-- Kategorier-->
-        <ul id="katelog">
-            <li><a href="sortering.html">Gutter-katelog</a></li>
-            <li><a href="sortering.html">Jenter-katelog</a></li>
-        </ul>
-        <ul id="katelog" id="bilde-sko">
-            <li><a href="sortering.html">Bilde-sko</a></li>
-            <li><a href="sortering.html">Bilde-sko</a></li>
-        </ul>
-        <ul id="salg">
-            <li><a href="sortering.html">Salg</a></li>
-        </ul>
-    </nav>
-    
+    </main> 
+    <footer>
+        <!--Kundeservice 
+        frak
+    ofte stilte spørsmål
+om oss
+kjøpsvilkår-->
+    </footer>
 </body>
