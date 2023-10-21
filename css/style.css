@@ -157,6 +157,7 @@ main * {
     font-size: 3rem;
   }
 
+
   #nyheter-bilde {
     width: auto;
     height: 20rem;
@@ -168,36 +169,40 @@ main * {
     justify-content: space-between;
   }
 
-.kolleksjon *{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;  
-}
+  .kolleksjon * {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+----------------------------------------------
+  main {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
 
-/*hjelp fra chatgpt da den fjerner et element som innholder barn(dårlig forklart) eller en ekstra section i dette tilfelle*/
-.katelog-g-j{
-  display: contents;
-}
+  /*hjelp fra chatgpt da den fjerner et element som innholder barn(dårlig forklart) eller en ekstra section i dette tilfelle*/
+  .katelog-g-j {
+    display: contents;
+  }
+
+  .katelog-jenter {
+    grid-column: 1;
+
+  }
 
 
-.katelog-jenter{
-  grid-column: 1;
-}
+  .nyheter-section {
+    grid-column: 2;
+  }
 
+  .katelog-gutter {
+    grid-column: 3;
+  }
 
-.nyheter-section{
-  grid-column: 2;
-}
-
-.katelog-gutter{
-  grid-column:  3;
-}
-
-#bilde-sko1 #bilde-sko2{
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  justify-content: space-between;
-}
+  .katelog {
+    display: none
+  }
 
   #bilde-sko {
     padding-bottom: 10%;
