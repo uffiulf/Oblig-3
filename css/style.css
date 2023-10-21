@@ -90,7 +90,7 @@ nav ul {
   justify-self: center;
 }
 
-.nyheter-section{
+.nyheter-section {
   display: flex;
   justify-content: center;
 }
@@ -103,14 +103,14 @@ nav ul {
   justify-content: space-between;
 }
 
-.katelog{
+.katelog {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
   justify-content: space-between;
 }
 
-#salg{
+#salg {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -168,14 +168,36 @@ main * {
     justify-content: space-between;
   }
 
-  .kolleksjon {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: space-between;
-    justify-self: center;
-  }
+.kolleksjon *{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;  
+}
+
+/*hjelp fra chatgpt da den fjerner et element som innholder barn(dårlig forklart) eller en ekstra section i dette tilfelle*/
+.katelog-g-j{
+  display: contents;
+}
 
 
+.katelog-jenter{
+  grid-column: 1;
+}
+
+
+.nyheter-section{
+  grid-column: 2;
+}
+
+.katelog-gutter{
+  grid-column:  3;
+}
+
+#bilde-sko1 #bilde-sko2{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  justify-content: space-between;
+}
 
   #bilde-sko {
     padding-bottom: 10%;
