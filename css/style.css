@@ -24,15 +24,16 @@ body {
 }
 
 
-#sort-strek{
+#sort-strek {
   height: 1px;
   border: none;
   background-color: black;
   margin: 10px 0 10px 0;
 }
+
 /*-------------------*/
 /*Mobil strørrelse*/
-.forside i{
+.forside i {
   font-size: 2rem;
 }
 
@@ -40,23 +41,20 @@ body {
   height: 4rem;
 }
 
-.profil{
+.profil {
   font-size: 2rem;
 }
 
-.hamburger{
+.hamburger {
   font-size: 2rem;
 }
 
-.handlekurv{
+.handlekurv {
   font-size: 2rem;
 }
 
 
-#nyheter {
-  display: flex;
-  justify-content: center;
-}
+
 
 #nyheter-bilde {
   width: auto;
@@ -64,11 +62,6 @@ body {
 }
 
 
-#salg{
-  display: flex;
-  justify-content: center;
-}
-/* -----------------*/
 #bunn-ikoner {
   display: flex;
   flex-wrap: nowrap;
@@ -90,16 +83,44 @@ nav ul {
   padding: 0;
 }
 
+.kolleksjon {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  justify-self: center;
+}
+
+.nyheter-section{
+  display: flex;
+  justify-content: center;
+}
+
+
+.katelog-g-j {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  justify-content: space-between;
+}
+
 .katelog{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding-top: 5%;
-  padding-left: 5%;
-  padding-right: 5%;
-  margin: 0;
-
+  flex-wrap: nowrap;
+  justify-content: center;
+  justify-content: space-between;
 }
+
+#salg{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+/*fjerne punkter fra alt i main*/
+main * {
+  list-style-type: none;
+}
+
 
 /*Index - Desktop størrelse*/
 @media screen and (min-width : 768px) {
@@ -116,7 +137,7 @@ nav ul {
     justify-content: space-between;
   }
 
-  .forside i{
+  .forside i {
     font-size: 3rem;
   }
 
@@ -124,20 +145,16 @@ nav ul {
     height: 10rem;
   }
 
-.profil i{
-  font-size: 3rem;
-}
+  .profil i {
+    font-size: 3rem;
+  }
 
-.hamburger i{
-  font-size: 3rem;
-}
+  .hamburger i {
+    font-size: 3rem;
+  }
 
-.handlekurv{
-  font-size: 3rem;
-}
-  #nyheter {
-    display: flex;
-    justify-content: center;
+  .handlekurv {
+    font-size: 3rem;
   }
 
   #nyheter-bilde {
@@ -151,26 +168,24 @@ nav ul {
     justify-content: space-between;
   }
 
-  .katelog{
+  .kolleksjon {
     display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-evenly;
-    padding-top: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
-    margin: 0;
-    
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    justify-self: center;
   }
 
-  #bilde-sko{
+
+
+  #bilde-sko {
     padding-bottom: 10%;
     margin: 10%;
   }
 
   /*salg forsvinner i desktop*/
-#salg{
-  display: none
-}
+  #salg {
+    display: none
+  }
 }
 
 
@@ -178,32 +193,33 @@ nav ul {
 /*-------------------*/
 /*produktside - mobil*/
 
-#produkt-bilde{
+
+.main-produkt {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+}
+
+#produkt-bilde {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  padding-top: 1%;
-  padding-bottom: 5%;
-  margin: 0;
+  margin: 5%;
 }
 
-#produkt-bilde img{
+#produkt-bilde img {
   border-radius: 3%;
-  height: 326px;
+  width: 380px;
 }
 
-.price-and-buy{
+.price-size-buy {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  padding-left: 20%;
-  padding-right: 10%;
-  
-
-
+  align-items: center;
 }
 
-#btn{
+#btn {
   width: 30%;
   max-width: 120px
 }
@@ -246,15 +262,15 @@ nav ul {
 
 
 
-#produktnavn{
+#produktnavn {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
-  
+
 }
 
-.produkt-info{
+.produkt-info {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
@@ -264,20 +280,20 @@ nav ul {
 
 /*produkt - Desktop størrelse*/
 @media screen and (min-width : 768px) {
-  main{
+  main {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
     justify-content: space-evenly;
 
   }
-  #produkt-bilde img{
-   
-  }
-  #produkt-bilde{
+
+  #produkt-bilde img {}
+
+  #produkt-bilde {
     grid-column: 3
   }
 
-#kundevurderinger{
-  grid-column: ;
-}
+  #kundevurderinger {
+    grid-column: ;
+  }
 }
