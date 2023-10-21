@@ -25,7 +25,7 @@ body {
 
 
 #sort-strek {
-  height: 1px;
+  height: 1.2px;
   border: none;
   background-color: black;
   margin: 10px 0 10px 0;
@@ -114,6 +114,29 @@ nav ul {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
+}
+
+.footer1 *, .footer2 * {
+  list-style: none;
+}
+
+.footer1 {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  padding-left: 10%;
+}
+
+.footer2 {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  padding-right: 10%;
+}
+
+body footer {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*fjerne punkter fra alt i main*/
@@ -213,6 +236,10 @@ main * {
   #salg {
     display: none
   }
+}
+
+.footer-strek{
+  border-top: 1px solid black;
 }
 
 
