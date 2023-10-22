@@ -29,6 +29,7 @@ body {
   border: none;
   background-color: black;
   margin: 10px 0 10px 0;
+  padding: 0;
 }
 
 /*-------------------*/
@@ -407,9 +408,92 @@ main * {
 /*-------------------*/
 /*Mobil - sortering*/
 
-.vertikal-strek{
-  border: none;
-  border-left: 2px solid black;
-  height: 100px;
+.vertikal-linje{
+  border-left: 2px solid rgb(0, 0, 0);
+  height: 150px;
   width: 1px;
+  margin-left: 50px;
+  margin-top: 0;
+}
+
+.thick-strek{
+  height: 3px;
+  border: none;
+  background-color: black;
+  margin: 10px 0 10px 0;
+}
+
+.filter-og-tomfilter{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  margin: 5%;
+  font-size: 1rem;
+}
+
+.filter{
+  font-size: 1rem;
+}
+
+.produkter{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 5%;
+  gap: 5%;
+  font-size: 1rem;
+}
+
+
+
+/*Sortering - Desktop*/
+
+@media screen and (min-width : 768px) {
+
+  .thick-strek{
+    display: none;
+  }
+
+  .filter{
+    font-size: 2rem;
+  }
+
+main aside h4{
+  font-size: 2rem;
+}
+
+
+.filter-og-tomfilter{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 5%;
+  font-size: 2rem;
+  flex-direction: row;
+}
+
+.filter h4{
+  display: none;
+}
+
+.vertikal-linje{
+  order: 3;
+  justify-self: right;
+}
+
+.produkter{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5%;
+  gap: 5%;
+  font-size: 2rem;
+}
+
+.main-sortering{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  justify-content: center;
+}
+
 }
