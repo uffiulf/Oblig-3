@@ -325,11 +325,11 @@ main * {
 
 
 
-#produktnavn {
+#kundevurderinger {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-self: center;
 
 }
 
@@ -343,27 +343,32 @@ main * {
 
 /*produkt - Desktop størrelse*/
 @media screen and (min-width : 768px) {
-   .produkt-bilde-section, #price, #sizing, #btn, #produktnavn, #kundevurderinger {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    grid-template-rows: auto auto;
-    justify-content: space-evenly;
-
+  .main-produkt {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
   }
-
-  .produkt-bilde-section{
-    grid-column: 4 ;
+  
+  .produkt-info {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    width: 100%; /* eller en annen bredde etter behov */
   }
 
   #kundevurderinger {
-    grid-column: 5 ;
+    order: 3;
+    padding-right: 2%;
+    padding-left: 5%;
   }
 
-  #price {
-    grid-column:  ;
+  .produkt-bilde-section {
+    order: 3;
   }
 
-  #btn {
-    grid-column:2 ;
+ 
+
+  .price-size-buy {
+    order: 2;
   }
 }
