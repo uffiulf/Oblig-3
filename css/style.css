@@ -353,7 +353,8 @@ main * {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    margin: 5%;
+    margin: 10%;
+    padding: 2%;
   }
 
   .produkt-bilde-section{
@@ -383,6 +384,32 @@ main * {
     margin: 5%;
   }
 
+  #price {
+    font-size: 2rem;
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+    margin: 0;
+  }
 
+  #sizing {
+    font-size: 1.4rem;
+    padding-top: 6rem;
+    margin: 0;
+  }
 
+  #btn{
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+}
+
+/*-------------------*/
+/*Mobil - sortering*/
+
+.vertikal-strek{
+  border: none;
+  border-left: 2px solid black;
+  height: 100px;
+  width: 1px;
 }
