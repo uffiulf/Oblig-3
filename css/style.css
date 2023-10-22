@@ -54,8 +54,6 @@ body {
 }
 
 
-
-
 #nyheter-bilde {
   width: auto;
   height: 10rem;
@@ -87,8 +85,9 @@ nav ul {
   display: grid;
   grid-template-columns: auto;
   justify-content: center;
-  justify-self: center;
 }
+
+
 
 .nyheter-section {
   display: flex;
@@ -116,7 +115,9 @@ nav ul {
   justify-content: center;
 }
 
-.footer1 *, .footer2 * {
+
+.footer1 *,
+.footer2 * {
   list-style: none;
 }
 
@@ -192,17 +193,23 @@ main * {
     justify-content: space-between;
   }
 
-  .kolleksjon * {
+  /*----------------------------------------------*/
+  /* .kolleksjon nekter å holde seg sentrert.. */
+
+ .kolleksjon {
     display: grid;
     grid-template-columns: auto auto auto;
-  }
-----------------------------------------------
-  main {
-    display: flex;
-    flex-wrap: nowrap;
+    padding-left: 50%;
+    margin: 2%;
+    padding-bottom: 10%;
     justify-content: center;
-    align-items: center;
+    
   }
+
+ 
+/*-------------------------------------*/
+
+
 
   /*hjelp fra chatgpt da den fjerner et element som innholder barn(dårlig forklart) eller en ekstra section i dette tilfelle*/
   .katelog-g-j {
@@ -224,7 +231,7 @@ main * {
   }
 
   .katelog {
-    display: none
+    display: none;
   }
 
   #bilde-sko {
@@ -238,7 +245,7 @@ main * {
   }
 }
 
-.footer-strek{
+.footer-strek {
   border-top: 1px solid black;
 }
 
@@ -269,8 +276,10 @@ main * {
 .price-size-buy {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 #btn {
@@ -334,20 +343,27 @@ main * {
 
 /*produkt - Desktop størrelse*/
 @media screen and (min-width : 768px) {
-  main {
+   .produkt-bilde-section, #price, #sizing, #btn, #produktnavn, #kundevurderinger {
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto auto;
     justify-content: space-evenly;
 
   }
 
-  #produkt-bilde img {}
-
-  #produkt-bilde {
-    grid-column: 3
+  .produkt-bilde-section{
+    grid-column: 4 ;
   }
 
   #kundevurderinger {
-    grid-column: ;
+    grid-column: 5 ;
+  }
+
+  #price {
+    grid-column:  ;
+  }
+
+  #btn {
+    grid-column:2 ;
   }
 }
